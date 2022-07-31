@@ -1,15 +1,22 @@
-import exp from "constants";
-import { NextPage } from "next";
-import { TitleContainer } from "./style";
+
+import { NextPage} from "next";
+import { NavbarContainer, LogoImageWrap, LogoImage} from "./style";
+// import Image from 'next/image'
 
 
 const Navbar: NextPage = ()=>{
  return(
     <>
-    <TitleContainer>
-    Navbar
-    </TitleContainer>
-
+    <NavbarContainer>
+    <LogoImageWrap>
+        <LogoImage
+          src="/static/images/rufflife-logo.png"
+          alt="Ruff life logo"
+          width={100}
+          height={100}
+        />
+      </LogoImageWrap>
+    </NavbarContainer>
     </>
  )
 }
