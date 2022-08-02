@@ -1,5 +1,5 @@
 import { NextPage } from "next";
-import { NavbarContainer, LogoImageWrap, GetAppBtn } from "./style";
+import { NavbarContainer, LogoImageWrap, GetAppBtn } from "./navbar.style";
 import Image from "next/image";
 
 const Navbar: NextPage = () => {

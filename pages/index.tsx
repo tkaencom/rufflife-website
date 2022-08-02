@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import Hero from '../components/home/hero/Hero'
 import Navbar from '../components/navbar/navbar'
  import {GlobalStyle} from '../styles/globalstyles'
 
@@ -14,8 +15,8 @@ const Home: NextPage = () => {
       </Head>
       <Navbar></Navbar>
       <div>
-        body
-        </div>
+        <Hero></Hero>
+      </div>
     </>
   )
 }

@@ -21,7 +21,7 @@ export const GetAppBtn = styled.button`
   height: 5vh;
   border: none;
   text-align: center;
-  font-size: 16px;
+  font-size: 14px;
   color: white;
   border-radius: 15px;
   cursor: pointer;
@@ -37,6 +37,7 @@ export const GetAppBtn = styled.button`
   ${media.desktop`
   display: block;
 `};
+ box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   &:hover {
     opacity: 0.9;
   }
