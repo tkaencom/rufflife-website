@@ -12,7 +12,6 @@ const Home: NextPage = () => {
         <meta name="description" content="Welcome to Rufflife" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      
       <Navbar></Navbar>
       <div>
         body
