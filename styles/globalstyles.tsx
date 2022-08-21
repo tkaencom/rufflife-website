@@ -4,6 +4,11 @@ export const Colors = {
     PrimaryBackground : '#F5F5F5',
     PrimaryThemeColor: '#FF5E00',
 }
+export const RootContainerMargin = {
+   desktop: '0 10vw 0 10vw;',
+   tablet: '0 5vw 0 5vw;',
+   mobile: '0 1vw 0 1vw;'
+}
 
 export const  GlobalStyle = createGlobalStyle`
 body {

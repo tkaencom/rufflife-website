@@ -1,5 +1,5 @@
 import { NextPage } from "next";
-import { NavbarContainer, LogoImageWrap, GetAppBtn } from "./navbar.style";
+import { NavbarContainer, LogoImageWrap, GetAppBtn, GetContainer } from "./navbar.style";
 import Image from "next/image";
 
 const Navbar: NextPage = () => {
@@ -14,7 +14,9 @@ const Navbar: NextPage = () => {
             height={120}
           />
         </LogoImageWrap>
+        <GetContainer>
         <GetAppBtn>Get the App</GetAppBtn>
+        </GetContainer>
       </NavbarContainer>
     </>
   );

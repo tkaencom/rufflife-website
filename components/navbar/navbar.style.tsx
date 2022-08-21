@@ -1,22 +1,47 @@
 import styled from "styled-components";
-import media from "../../styles/media/media";
+import {device} from "../../styles/media/media";
 import Image from "next/image";
-import { Colors } from "../../styles/globalstyles";
+import { Colors, RootContainerMargin } from "../../styles/globalstyles";
+
 
 export const NavbarContainer = styled.div`
-  display: flex;
-  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr;
   height: 12vh;
-  width: 100vw;
   justify-content: center;
-  align-items: center;
+  align-content: center;
+  margin: ${RootContainerMargin.mobile};
+
+${device.tablet}{
+  grid-template-columns: 3fr 1fr;
+  margin: ${RootContainerMargin.tablet};
+  }
+${device.desktop}{
+  grid-template-columns: 3fr 1fr;
+  margin: ${RootContainerMargin.desktop};
+}
+
 `;
 
-export const GetAppBtn = styled.button`
+export const GetContainer = styled.div`
+${device.mobile}{
   display: none;
+}
+
+justify-content: center;
+align-content: center;
+
+${device.tablet}{
+  display: grid;
+};
+
+${device.desktop}{
+  display: grid;
+};
+`
+export const GetAppBtn = styled.button`
   background-color: ${Colors.PrimaryThemeColor};
-  display: block;
-  margin: 3%;
+  margin: 3vw;
   width: 15vh;
   height: 5vh;
   border: none;
@@ -26,17 +51,6 @@ export const GetAppBtn = styled.button`
   border-radius: 15px;
   cursor: pointer;
 
-  ${media.mobile`
-  display: none;
-`};
-
-  ${media.tablet`
-  display: block;
-`};
-
-  ${media.desktop`
-  display: block;
-`};
  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   &:hover {
     opacity: 0.9;
@@ -47,19 +61,19 @@ export const LogoImageWrap = styled.div`
   margin: 3%;
   width: 100%;
 
-  ${media.mobile`
+  ${device.mobile}{
   display: flex;
   justify-content: center;
   align-items: center;
-`};
+}
 
-  ${media.tablet`
+${device.tablet}{
   display: block;
-`};
+}
 
-  ${media.desktop`
+${device.desktop}{
   display: block;
-`};
+}
   cursor: pointer;
   &:hover {
     opacity: 0.9;
