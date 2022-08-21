@@ -24,11 +24,12 @@ ${device.desktop}{
 `;
 
 export const GetContainer = styled.div`
+
 ${device.mobile}{
   display: none;
 }
 
-justify-content: center;
+justify-content: end;
 align-content: center;
 
 ${device.tablet}{
@@ -41,7 +42,6 @@ ${device.desktop}{
 `
 export const GetAppBtn = styled.button`
   background-color: ${Colors.PrimaryThemeColor};
-  margin: 3vw;
   width: 15vh;
   height: 5vh;
   border: none;
@@ -58,7 +58,6 @@ export const GetAppBtn = styled.button`
 `;
 
 export const LogoImageWrap = styled.div`
-  margin: 3%;
   width: 100%;
 
   ${device.mobile}{
