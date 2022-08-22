@@ -3,7 +3,8 @@ import { createGlobalStyle } from 'styled-components'
 export const Colors = {
     PrimaryBackground : '#F5F5F5',
     PrimaryThemeColor: '#FF5E00',
-    OrangePeel: 'rgba(247, 158, 28, 0.06)'
+    OrangePeel: 'rgba(247, 158, 28, 0.06)',
+    SelectiveYellow: '#FEBC1E'
 }
 export const RootContainerMargin = {
    desktop: '0 10vw 0 10vw;',
