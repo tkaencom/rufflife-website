@@ -15,7 +15,8 @@ export const RootContainerMargin = {
 export const  GlobalStyle = createGlobalStyle`
 @font-face {
     font-family: 'Poppins';
-    src: url('/static/fonts/Poppins-Regular.ttf') format('ttf');
+    src: url('/static/fonts/Poppins-Regular.ttf');
+    font-style: normal;
 }
 body {
     margin: 0;

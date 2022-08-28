@@ -96,6 +96,10 @@ margin: 5%;
 width: 10%;
 height: 0.6vw;
 background-color: ${Colors.SelectiveYellow};
+${device.mobile}{
+    width: 20%;
+    height: 2vw;
+}
 ${device.tablet}{
 margin: 0;
 margin-left: 5%;
