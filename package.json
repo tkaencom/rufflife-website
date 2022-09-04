@@ -27,7 +27,7 @@
   },
   "engines": {
     "npm": "Please-use-yarn",
-    "yarn": ">=1.22.19"
+    "yarn": ">=1.22.10"
   },
   "resolutions": {
     "styled-components": "^5"
